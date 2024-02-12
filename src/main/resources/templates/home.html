@@ -11,51 +11,29 @@
 </head>
 <body>
 
-    <header id="site-header" class="fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand">CLTHS</a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- toggle switch for light and dark theme -->
-                <div class="cont-ser-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
+    <div th:replace="~{header :: header}">...</div>
+    <!-- banner section -->
+    <section id="home" class="w3l-banner py-5">
+        <div class="banner-content">
+            <div class="container py-4">
+                <div class="row align-items-center pt-sm-5 pt-4">
+                    <div class="col-md-6">
+                        <h3 class="mb-lg-4 mb-3">Clothing Lorem Ipsum</h3>
+                        <p class="banner-sub">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                        <div class="d-flex align-items-center buttons-banner">
+                            <a class="btn btn-style mt-lg-5 mt-4">Admission Now</a>
                         </div>
-                    </nav>
+                    </div>
+                    <div class="col-md-6 right-banner-2 text-end position-relative mt-md-0 mt-5">
+
+                    </div>
                 </div>
-                <!-- //toggle switch for light and dark theme -->
-            </nav>
+            </div>
         </div>
-    </header>
-    <!-- //header -->
+    </section>
+    <!-- //banner section -->
 
-
-
+    <div th:replace="~{footer :: footer}">...</div>
 
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
